@@ -23,6 +23,7 @@
         "algorithm": "cpp",
         "string": "cpp",
         "cmath": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "cstdio": "cpp"
     }
 }
