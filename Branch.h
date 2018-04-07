@@ -2,7 +2,7 @@
 #include <iostream>
 
 class Branch {
-    int longitude, latitude, cars;
+    int longitude, latitude, cars, *city;
 public:
     void setPosition(int, int);
     int getLongitude() {return longitude;}

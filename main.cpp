@@ -10,8 +10,11 @@
 using namespace std;
 
 int main() {
-    City city;
-    city.createCity(3,3);
+    City *city;
+    City c;
+    city = & c;
+    city->createCity(3,3);
+    city->printCity();
     Branch branch;
     branch.setPosition(3,4);
     // cout << "area: " << branch.getLongitude();
