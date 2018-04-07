@@ -1,12 +1,12 @@
-
 #pragma once
+
 #include <iostream>
 #include <string>
 
 class City {
-    std::string city[100][100];
     int x, y;
 public:
+    std::string city[100][100];
     void createCity (int, int);
     void printCity(){
         for(int i = 1; i <= x; i++){

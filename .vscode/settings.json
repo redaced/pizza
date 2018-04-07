@@ -24,6 +24,7 @@
         "string": "cpp",
         "cmath": "cpp",
         "ios": "cpp",
-        "cstdio": "cpp"
+        "cstdio": "cpp",
+        "cstdlib": "cpp"
     }
 }
