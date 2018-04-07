@@ -1,10 +1,10 @@
-#pragma once
 
+#pragma once
 #include <iostream>
 #include <string>
 
 class City {
-    static std::string city[100][100];
+    std::string city[100][100];
     int x, y;
 public:
     void createCity (int, int);
@@ -16,7 +16,9 @@ public:
             std::cout << std::endl;
         }
     }
-    std::string getCity();
+    std::string getCity(){
+        return city[1][1];
+    }
 };
 
 void City::createCity (int width, int height) {
@@ -27,8 +29,4 @@ void City::createCity (int width, int height) {
             city[i][j] = "O";
         }
     }
-}
-
-std::string City::getCity(){
-    return "f";
 }

@@ -1,5 +1,3 @@
-#pragma once
-
 #include "City.h"
 #include <iostream>
 
@@ -11,9 +9,9 @@ public:
 };
 
 void Branch::setPosition (int x, int y) {
-    // City city;
-    // city.createCity(3,3);
-    // city.getCity();
+    City city;
+    std::cout << "Creating Branch...";    
+    city.getCity();
     longitude = x;
     latitude = y;
 }
