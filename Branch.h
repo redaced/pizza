@@ -2,16 +2,18 @@
 #include <iostream>
 
 class Branch {
-    int longitude, latitude, cars, *city;
+    Branch(City *city);
+    int longitude, latitude, cars;
+    City *city;
 public:
     void setPosition(int, int);
     int getLongitude() {return longitude;}
 };
 
 void Branch::setPosition (int x, int y) {
-    City city;
-    std::cout << "Creating Branch...";    
-    city.getCity();
     longitude = x;
     latitude = y;
+}
+Branch::Branch(City *city) {
+    this->city = city;
 }

@@ -13,9 +13,9 @@ int main() {
     City *city;
     City c;
     city = & c;
-    city->createCity(3,3);
+    city->createCity(10,10);
     city->printCity();
-    Branch branch;
+    Branch branch(city);
     branch.setPosition(3,4);
     // cout << "area: " << branch.getLongitude();
     return 0;
