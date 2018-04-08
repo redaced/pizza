@@ -71,8 +71,13 @@ void Lee (int k, int x, int y)
         // Go down...
         if(m[x+1][y] > k+1)
         {
-            m[x+1][y] = k+1;
-            Lee (k+1, x+1, y);
+            if(m[x+1][y] == 100){
+                m[x+1][y] = k+1;
+                Lee (k+1, x+1, y);
+            }else{
+                m[x+1][y] = k+2;
+                Lee (k+2, x+1, y);
+            }
         }
     }
     
@@ -80,8 +85,14 @@ void Lee (int k, int x, int y)
         // Go up...
         if(m[x-1][y] > k+1)
         {
-            m[x-1][y] = k+1;
-            Lee (k+1, x-1, y);
+            if(m[x-1][y] == 100){
+                m[x-1][y] = k+1;
+                Lee (k+1, x-1, y);
+            }else{
+                m[x-1][y] = k+2;
+                Lee (k+2, x-1, y);
+            }
+            
         }
     }
 
@@ -89,8 +100,13 @@ void Lee (int k, int x, int y)
         // Go right...
         if(m[x][y+1] > k+1)
         {
-            m[x][y+1] = k+1;
-            Lee (k+1, x, y+1);
+            if(m[x][y+1] == 100){
+                m[x][y+1] = k+1;
+                Lee (k+1, x, y+1);
+            }else{
+                m[x][y+1] = k+2;
+                Lee (k+2, x, y+1);
+            }
         }
     }
 
@@ -98,8 +114,13 @@ void Lee (int k, int x, int y)
         // Go left...
         if(m[x][y-1] > k+1)
         {
-            m[x][y-1] = k+1;
-            Lee (k+1, x, y-1);
+            if(m[x][y-1] == 100){
+                m[x][y-1] = k+1;
+                Lee (k+1, x, y-1);
+            }else{
+                m[x][y-1] = k+2;
+                Lee (k+2, x, y-1);
+            }
         }
     }
 }
